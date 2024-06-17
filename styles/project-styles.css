@@ -1,0 +1,124 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'VT323', monospace;
+    background-color: #0d0d0d;
+    color: #00ffcc;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+}
+
+header {
+    background-color: rgba(26, 26, 26, 0.8);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #00ffcc;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    color: #00ffcc;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3em;
+    text-shadow: 2px 2px 5px #ff00cc;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #00ffcc;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff00cc;
+}
+
+.section {
+    padding: 50px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background: rgba(13, 13, 13, 0.9);
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #00ffcc;
+}
+
+.section a{
+    text-decoration: none;
+}
+
+.section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(0, 255, 204, 0.2) 25%, transparent 25%, transparent 50%, rgba(0, 255, 204, 0.2) 50%, rgba(0, 255, 204, 0.2) 75%, transparent 75%, transparent);
+    background-size: 50px 50px;
+    z-index: -1;
+    opacity: 0.3;
+    transform: translateX(-50%);
+}
+
+.section h2 {
+    color: #00ffcc;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5em;
+    border-bottom: 2px solid #00ffcc;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00ffcc;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ff00cc;
+}
+
+footer {
+    background-color: rgba(26, 26, 26, 0.8);
+    text-align: center;
+    padding: 10px;
+    border-top: 3px solid #00ffcc;
+}
+
+footer p {
+    margin: 0;
+    color: #00ffcc;
+}
